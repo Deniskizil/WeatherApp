@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,10 +8,13 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
+    <link rel="favicon icon" href="#">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>Weather Application</h2>
+    <div class="container">
+      <div class="card">
+    <h2 id="title">Weather Application</h2>
 
     <form>
       <input id="input" type="text" placeholder="city name..." />
@@ -18,11 +22,13 @@
     </form>
 
     <div class="weather">
-      <h2 id="temp">temp</h2>
-      <h3 id="name">name</h3>
-      <span id="time">time</span>
-      <p id="condition">condition</span>
+      <h2 id="temp"></h2>
+      <h3 id="name"></h3>
+      <span id="time"></span>
+      <p id="condition"></span>
     </div>
+  </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
