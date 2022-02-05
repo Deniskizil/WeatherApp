@@ -13,7 +13,7 @@
  * Step 10: Conosle.log() your data.
  * Step 11: Display your data in your page with HTML and CSS
  */
-const container = document.querySelector('.container');
+const card = document.querySelector('.card');
 const input = document.querySelector("#input")
 const form = document.querySelector("form")
 const weatherElement = document.querySelector(".weather")
@@ -51,6 +51,7 @@ form.addEventListener("submit", function (event) {
       let number = Math.floor(Math.random() * 10) + 1;
       document.body.style.backgroundImage = `url('${data.results[number].urls.full}')`
       document.body.style.color = 'red'
+      card.style.margin = '0'
       // console.log(data.results[0].urls.full)
     })
 })
